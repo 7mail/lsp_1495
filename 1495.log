@@ -1,0 +1,61 @@
+clangd: I[16:16:54.257] --> $/progress
+clangd: I[16:16:54.257] --> $/progress
+clangd: I[16:16:54.257] --> $/progress
+:: <-  clangd $/progress: {'token': 'backgroundIndexProgress', 'value': {'kind': 'report', 'message': '0/2', 'percentage': 0}}
+:: <-  clangd $/progress: {'token': 'backgroundIndexProgress', 'value': {'kind': 'report', 'message': '1/2', 'percentage': 50}}
+:: <-  clangd $/progress: {'token': 'backgroundIndexProgress', 'value': {'kind': 'report', 'message': '1/2', 'percentage': 50}}
+clangd: I[16:16:56.592] Indexed /Users/t/project-build/module/tests/tests.cc (160 symbols, 27912 refs, 426 files)
+clangd: I[16:16:56.592] Failed to compile /Users/t/project-build/module/tests/tests.cc, index may be incomplete
+clangd: I[16:16:57.351] <-- textDocument/documentHighlight(5)
+clangd: I[16:16:57.351] --> reply:textDocument/documentHighlight(5) 0 ms
+:: --> clangd textDocument/documentHighlight(5): {'position': {'line': 147, 'character': 21}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+:: --> clangd textDocument/codeAction(6): {'range': {'start': {'line': 147, 'character': 21}, 'end': {'line': 147, 'character': 21}}, 'context': {'diagnostics': []}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+:: <<< clangd 5: []
+clangd: I[16:16:57.354] <-- textDocument/codeAction(6)
+clangd: I[16:16:57.354] --> reply:textDocument/codeAction(6) 0 ms
+:: <<< clangd 6: []
+clangd: I[16:16:59.083] <-- textDocument/documentHighlight(7)
+:: --> clangd textDocument/documentHighlight(7): {'position': {'line': 147, 'character': 20}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+:: --> clangd textDocument/codeAction(8): {'range': {'start': {'line': 147, 'character': 18}, 'end': {'line': 147, 'character': 20}}, 'context': {'diagnostics': [{'source': 'clang', 'relatedInformation': [], 'range': {'start': {'character': 18, 'line': 147}, 'end': {'character': 20, 'line': 147}}, 'severity': 1, 'message': "Invalid suffix 'sv' on integer constant", 'code': 'invalid_suffix_constant'}]}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:16:59.086] <-- textDocument/codeAction(8)
+clangd: I[16:16:59.092] --> reply:textDocument/documentHighlight(7) 9 ms
+:: <<< clangd 7: []
+clangd: I[16:16:59.101] --> reply:textDocument/codeAction(8) 14 ms
+:: <<< clangd 8: []
+clangd: I[16:17:00.062] --> $/progress
+:: <-  clangd $/progress: {'token': 'backgroundIndexProgress', 'value': {'kind': 'end'}}
+clangd: I[16:17:03.158] <-- textDocument/documentHighlight(9)
+clangd: I[16:17:03.159] --> reply:textDocument/documentHighlight(9) 1 ms
+:: --> clangd textDocument/documentHighlight(9): {'position': {'line': 147, 'character': 21}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:17:03.163] <-- textDocument/codeAction(10)
+clangd: I[16:17:03.163] --> reply:textDocument/codeAction(10) 0 ms
+:: --> clangd textDocument/codeAction(10): {'range': {'start': {'line': 147, 'character': 21}, 'end': {'line': 147, 'character': 21}}, 'context': {'diagnostics': []}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+:: <<< clangd 9: []
+:: <<< clangd 10: []
+clangd: I[16:17:06.207] <-- textDocument/documentHighlight(11)
+:: --> clangd textDocument/documentHighlight(11): {'position': {'line': 147, 'character': 20}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+:: --> clangd textDocument/codeAction(12): {'range': {'start': {'line': 147, 'character': 18}, 'end': {'line': 147, 'character': 20}}, 'context': {'diagnostics': [{'source': 'clang', 'relatedInformation': [], 'range': {'start': {'character': 18, 'line': 147}, 'end': {'character': 20, 'line': 147}}, 'severity': 1, 'message': "Invalid suffix 'sv' on integer constant", 'code': 'invalid_suffix_constant'}]}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:17:06.212] <-- textDocument/codeAction(12)
+clangd: I[16:17:06.218] --> reply:textDocument/documentHighlight(11) 10 ms
+:: <<< clangd 11: []
+clangd: I[16:17:06.224] --> reply:textDocument/codeAction(12) 12 ms
+:: <<< clangd 12: []
+clangd: I[16:17:08.035] <-- textDocument/didChange
+::  -> clangd textDocument/didChange: {'contentChanges': [{'range': {'start': {'line': 147, 'character': 19}, 'end': {'line': 147, 'character': 20}}, 'rangeLength': 1, 'text': ''}], 'textDocument': {'version': 1, 'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:17:08.036] <-- textDocument/documentHighlight(13)
+:: --> clangd textDocument/documentHighlight(13): {'position': {'line': 147, 'character': 19}, 'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:17:08.053] ASTWorker building file /Users/t/project-build/module/tests/tests.cc version 1 with command
+clangd: [/Users/t/project-build/build_lite_clang_tidy]
+clangd: /Users/t/Applications/usr/bin/clang++ --driver-mode=g++ -c /Users/t/project-build/module/tests/tests.cc
+clangd: I[16:17:08.151] <-- textDocument/didChange
+::  -> clangd textDocument/didChange: {'contentChanges': [{'range': {'start': {'line': 0, 'character': 0}, 'end': {'line': 234, 'character': 0}}, 'rangeLength': 7323, 'text': '/* Apache License, Version 2.0 */\n\n#include <fstream>\n#include <gtest/gtest.h>\n#include <ios>\n#include <memory>\n#include <sstream>\n#include <string>\n#include <system_error>\n\n#include "testing/testing.h"\nconst auto t = 1s;\n'}], 'textDocument': {'version': 2, 'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+::  -> clangd textDocument/didSave: {'textDocument': {'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}}
+clangd: I[16:17:08.152] <-- textDocument/didSave
+clangd: I[16:17:08.259] --> reply:textDocument/documentHighlight(13) 222 ms
+clangd: I[16:17:08.260] Skipping rebuild of the AST for /Users/t/project-build/module/tests/tests.cc, inputs are the same.
+:: <<< clangd 13: []
+clangd: I[16:17:08.270] --> textDocument/publishDiagnostics
+:: <-  clangd textDocument/publishDiagnostics: {'diagnostics': [{'source': 'clang', 'relatedInformation': [], 'range': {'start': {'character': 18, 'line': 147}, 'end': {'character': 19, 'line': 147}}, 'severity': 1, 'message': 'No matching literal operator for call to \'operator""s\' with argument of type \'unsigned long long\' or \'const char *\', and no matching literal operator template', 'code': 'ovl_no_viable_literal_operator'}], 'version': 1, 'uri': 'file:///Users/t/project-build/module/tests/tests.cc'}
+clangd: I[16:17:08.358] ASTWorker building file /Users/t/project-build/module/tests/tests.cc version 2 with command
+clangd: [/Users/t/project-build/build_lite_clang_tidy]
+clangd: /Users/t/Applications/usr/bin/clang++ --driver-mode=g++ -c /Users/t/project-build/module/tests/tests.cc
